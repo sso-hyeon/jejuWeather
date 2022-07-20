@@ -1,0 +1,67 @@
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  width: 540px;
+  margin: 0 auto;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.d-none {
+  display: none;
+}
+
+.md {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.op {
+  opacity: 0;
+}
+
+img {
+  display: block;
+}
+#wrapper {
+  overflow-x: hidden;
+}
+/* 메뉴창 */
+#menu-wrap {
+  width: 540px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow-x: hidden;
+}
+
+#menu-wrap .menu {
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 540px;
+}
+
+#menu-wrap .menu .menu-close {
+  display: block;
+  width: 100px;
+  padding: 30px 0;
+  margin-left: auto;
+}
+
+#menu-wrap .menu .menu-list {
+  line-height: 50px;
+}
