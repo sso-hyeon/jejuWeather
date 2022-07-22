@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../common_file/lib/css/reset.css" />
     <link rel="stylesheet" href="../common_file/lib/css/common.css" />
     <link rel="stylesheet" href="../common_file/lib/css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div id="wrapper">
@@ -18,24 +19,58 @@
           <li class="menu-btn">메뉴</li>
         </ul>
       </header>
-      <section id="menu-wrap" class="d-none">
-        <div class="menu">
-          <div class="menu-close">닫기</div>
-          <ul class="menu-list">
-            <li>홈</li>
-            <li>관광지 추천</li>
-            <li>옷차림 추천</li>
-            <li>한라산 입하산출입제한시간 현황</li>
+      <main id="main">
+        <section class="map">
+          <ul>
+            <li class="on">제주</li>
+            <li>성산</li>
+            <li>서귀포</li>
+            <li>고산</li>
+          </ul>
+        </section>
+        <section class="weather-info">
+          <h3>지역명</h3>
+          <ul>
+            <li>🌞</li>
+            <li>기온 :</li>
+            <li>최저기온 :</li>
+            <li>최고기온 :</li>
+            <li>습도 :</li>
+            <li>미세먼지</li>
+          </ul>
+        </section>
+        <section class="safety-tips">
+          <h3>금일 날씨 국민행동 안전요령</h3>
+          <button>확인하기</button>
+        </section>
+        <section class="hour-weather">시간별 날씨 정보</section>
+        <section class="week-weather">주간 날씨 정보</section>
+      </main>
+
+      <footer id="footer"></footer>
+      <section class="popup-wrap d-none">
+        <div class="popup">
+          <button class="popup-close">X</button>
+          <ul>
+            <li class="popup-title">오늘은 맑음 입니다</li>
+            <li class="popup-icon">🌞</li>
+            <li class="popup-desc">내용 설명</li>
+            <li class="popup-go-btn">
+              기상청 국민행동요령 보거가기
+              <a
+                href="https://www.weather.go.kr/w/weather/warning/safetyguide/heavy-rain.do"
+                target="_blank"
+                >GO</a
+              >
+            </li>
           </ul>
         </div>
       </section>
-      <main id="main"></main>
-      <footer id="footer"></footer>
-
-      <script src="../common_file/lib/js/TweenMax.min.js"></script>
-      <script src="../common_file/lib/js/ScrollMagic.js"></script>
-      <script src="../common_file/lib/js/animation.gsap.js"></script>
-      <script src="../common_file/lib/js/header.js"></script>
     </div>
+    <script src="../common_file/lib/js/TweenMax.min.js"></script>
+    <script src="../common_file/lib/js/ScrollMagic.js"></script>
+    <script src="../common_file/lib/js/animation.gsap.js"></script>
+    <script src="../common_file/lib/js/header.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

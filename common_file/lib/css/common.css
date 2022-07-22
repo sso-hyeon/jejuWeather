@@ -17,7 +17,7 @@ body {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .md {
@@ -34,7 +34,7 @@ img {
   display: block;
 }
 #wrapper {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 /* 메뉴창 */
 #menu-wrap {
@@ -44,6 +44,7 @@ img {
   top: 0;
   background-color: rgba(0, 0, 0, 0.3);
   overflow-x: hidden;
+  opacity: 0;
 }
 
 #menu-wrap .menu {

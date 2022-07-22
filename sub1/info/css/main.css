@@ -1,0 +1,46 @@
+#main h2 {
+  text-align: left;
+  font-size: 1.6rem;
+  margin: 30px 0 0 30px;
+}
+
+.tab-wrap {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.tab-wrap li {
+  padding: 10px 15px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  border-radius: 18px;
+}
+
+.tab-wrap li.on {
+  background-color: #000;
+  color: white;
+}
+
+.item {
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.item-img {
+  background-color: #eee;
+  width: 160px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.item-place-name {
+  font-size: 1.3rem;
+}
