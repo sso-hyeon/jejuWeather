@@ -36,6 +36,28 @@ img {
 #wrapper {
   overflow: hidden;
 }
+#header {
+  width: 540px;
+  height: 70px;
+  background-color: #eee;
+}
+
+#header ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#header ul li {
+  line-height: 70px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+#header ul li:nth-child(2) {
+  flex-grow: 4;
+  flex-basis: 0;
+}
 /* 메뉴창 */
 #menu-wrap {
   width: 540px;
@@ -45,6 +67,7 @@ img {
   background-color: rgba(0, 0, 0, 0.3);
   overflow-x: hidden;
   opacity: 0;
+  z-index: 999;
 }
 
 #menu-wrap .menu {
@@ -65,4 +88,10 @@ img {
 
 #menu-wrap .menu .menu-list {
   line-height: 50px;
+}
+
+#main h2 {
+  text-align: left;
+  font-size: 1.6rem;
+  margin: 30px 0 0 30px;
 }

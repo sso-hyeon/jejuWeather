@@ -1,7 +1,7 @@
 const categoryBtns = document.querySelectorAll(".category-btn");
 
-categoryBtns.forEach((btn, idx) => {
+categoryBtns.forEach(btn => {
   btn.addEventListener("click", function (e) {
-    location.href = "info/index.html?category=" + e.target.dataset.param;
+    location.href = "info/index.html?code=" + e.target.dataset.code;
   });
 });

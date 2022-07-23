@@ -1,30 +1,24 @@
-const backBtn = document.querySelector(".back-btn");
-const getParams = new URLSearchParams(location.search).get("category");
-const categoryTitle = document.querySelector(".title");
-const tabWrap = document.querySelector(".tab-wrap");
-const tabs = document.querySelectorAll(".tab");
 const itemWrap = document.querySelector(".item-wrap");
-const resultList = tourList[getParams];
+
+const getParams = new URLSearchParams(location.search).get("code");
+const resultList = tourList.filter(list => list.code === getParams);
+
 window.addEventListener("load", function () {
-  categoryTitle.innerText = getParams;
+  console.log(resultList[0].title);
+  document.querySelector(".title").innerText = resultList[0].title;
 
-  resultList.forEach(list => {
-    createItemList(list);
-  });
+  allList();
 });
 
-backBtn.addEventListener("click", function () {
-  location.href = "../index.html";
-});
-tabWrap.addEventListener("click", function (e) {
+document.querySelector(".tab-wrap").addEventListener("click", function (e) {
   tabReset();
   e.target.classList.add("on");
-  const tabList = resultList.filter(list => list.category === e.target.dataset.list);
+  const tabList = resultList[0].list.filter(
+    list => list.category === e.target.dataset.list
+  );
   itemWrap.innerHTML = "";
   if (e.target.dataset.list === "all") {
-    resultList.forEach(list => {
-      createItemList(list);
-    });
+    allList();
   } else {
     tabList.forEach(list => {
       createItemList(list);
@@ -32,8 +26,13 @@ tabWrap.addEventListener("click", function (e) {
   }
 });
 
+function allList() {
+  resultList[0].list.forEach(list => {
+    createItemList(list);
+  });
+}
 function tabReset() {
-  tabs.forEach(tab => {
+  document.querySelectorAll(".tab").forEach(tab => {
     tab.classList.remove("on");
   });
 }

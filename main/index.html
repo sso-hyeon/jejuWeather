@@ -6,35 +6,33 @@
     <meta name="viewport" content="width=540, user-scalable=no" />
     <title>Jeju Weather</title>
     <link rel="stylesheet" href="../common_file/lib/css/reset.css" />
-    <link rel="stylesheet" href="../common_file/lib/css/common.css" />
-    <link rel="stylesheet" href="../common_file/lib/css/header.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="../common_file/css/common.css" />
+    <link rel="stylesheet" href="../common_file/css/main.css" />
   </head>
   <body>
     <div id="wrapper">
-      <header id="header">
-        <ul>
-          <li></li>
-          <li class="logo-btn">Logo</li>
-          <li class="menu-btn">메뉴</li>
-        </ul>
-      </header>
+      <header id="header"></header>
       <main id="main">
         <section class="map">
-          <ul>
-            <li class="on">제주</li>
-            <li>성산</li>
-            <li>서귀포</li>
-            <li>고산</li>
+            <button class="on">제주시</button>
+            <button>성산</button>
+            <button>서귀포</button>
+            <button>고산</button>
           </ul>
         </section>
         <section class="weather-info">
-          <h3>지역명</h3>
+          <h3></h3>
+          <ul id="temp-wrap">
+            <li><span id="temp-icon">🌞</span> <span id="temp">30</span></li>
+            <li>
+              <div>
+                최저기온 : <span id="min-temp"></span>
+              </div>
+              <div>
+                최고기온 : <span id="max-temp"></span>
+              </div>
+          </ul>
           <ul>
-            <li>🌞</li>
-            <li>기온 :</li>
-            <li>최저기온 :</li>
-            <li>최고기온 :</li>
             <li>습도 :</li>
             <li>미세먼지</li>
           </ul>
@@ -70,7 +68,7 @@
     <script src="../common_file/lib/js/TweenMax.min.js"></script>
     <script src="../common_file/lib/js/ScrollMagic.js"></script>
     <script src="../common_file/lib/js/animation.gsap.js"></script>
-    <script src="../common_file/lib/js/header.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../common_file/js/common.js"></script>
+    <script src="../common_file/js/main.js"></script>
   </body>
 </html>
