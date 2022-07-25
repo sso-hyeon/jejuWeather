@@ -14,24 +14,22 @@
       <header id="header"></header>
       <main id="main">
         <section class="map">
-            <button class="on">제주시</button>
-            <button>성산</button>
-            <button>서귀포</button>
-            <button>고산</button>
+            <button data-lat="33.5141" data-lon="126.5297" class="on">제주시</button>
+            <button data-lat="33.3868" data-lon="126.8802">성산</button>
+            <button data-lat="33.2462" data-lon="126.5653">서귀포</button>
+            <button data-lat="33.2938" data-lon="126.1628">고산</button>
           </ul>
         </section>
         <section class="weather-info">
           <h3></h3>
-          <ul id="temp-wrap">
-            <li><span id="temp-icon">🌞</span> <span id="temp">30</span></li>
-            <li>
-              <div>
-                최저기온 : <span id="min-temp"></span>
-              </div>
-              <div>
-                최고기온 : <span id="max-temp"></span>
-              </div>
-          </ul>
+          <div id="temp-wrap">
+            <img id="temp-icon" />
+            <span id="temp">30</span>
+            <ul>
+              <li>최저기온 : <span id="min-temp"></span></li>
+              <li>최고기온 : <span id="max-temp"></span></li>
+            </ul>
+          </div>
           <ul>
             <li>습도 :</li>
             <li>미세먼지</li>
@@ -41,7 +39,15 @@
           <h3>금일 날씨 국민행동 안전요령</h3>
           <button>확인하기</button>
         </section>
-        <section class="hour-weather">시간별 날씨 정보</section>
+        <section class="hour-weather">
+          <ul id="hour-title">
+            <li>시간</li>
+            <li>습도</li>
+            <li>바람(m/s)</li>
+            <li>강수량/적설량</li>
+          </ul>
+          <div id="hour-weather-list"></div>
+        </section>
         <section class="week-weather">주간 날씨 정보</section>
       </main>
 
@@ -70,5 +76,6 @@
     <script src="../common_file/lib/js/animation.gsap.js"></script>
     <script src="../common_file/js/common.js"></script>
     <script src="../common_file/js/main.js"></script>
+    <script src="../common_file/js/api.js"></script>
   </body>
 </html>

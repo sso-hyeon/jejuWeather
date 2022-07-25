@@ -22,7 +22,7 @@ function createHeader() {
   }
   const logo = document.createElement("li");
   logo.className = "logo-btn";
-  logo.innerText = "Logo";
+  logo.innerText = "Jeju Weather";
   const menuBtn = document.createElement("li");
   menuBtn.className = "menu-btn";
   menuBtn.innerText = "메뉴";
@@ -113,5 +113,11 @@ function menuListClick(menuList) {
     } else {
       location.href = "../" + e.target.dataset.page + "/index.html";
     }
+  });
+}
+
+function btnReset(btnName) {
+  document.querySelectorAll(btnName).forEach(btn => {
+    btn.classList.remove("on");
   });
 }

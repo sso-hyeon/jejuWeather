@@ -93,5 +93,9 @@ img {
 #main h2 {
   text-align: left;
   font-size: 1.6rem;
-  margin: 30px 0 0 30px;
+  margin: 30px 0;
+}
+
+#main {
+  padding: 0 6.7% 13%;
 }

@@ -1,13 +1,14 @@
 .category ul {
-  width: 65%;
+  width: 100%;
   margin: 50px auto 0;
 }
 
 .category ul li {
   border: 1px solid #555;
-  line-height: 50px;
+  line-height: 70px;
   margin: 20px 0;
   display: flex;
   padding: 0 50px;
   justify-content: space-between;
+  cursor: pointer;
 }

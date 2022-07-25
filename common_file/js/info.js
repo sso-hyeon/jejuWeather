@@ -54,7 +54,7 @@ function createItemList(list) {
   name.innerText = list.placeName;
   name.className = "item-place-name";
   placeScore.className = "item-score";
-  placeScore.innerText = "⭐ " + list.score;
+  placeScore.innerText = "⭐" + list.score;
   place.className = "item-location";
   place.innerText = list.location;
   placeDesc.className = "item-desc";

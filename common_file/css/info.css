@@ -1,5 +1,5 @@
 .tab-wrap {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
@@ -16,9 +16,8 @@
 }
 
 .item {
+  margin: 20px 0;
   display: flex;
-  padding: 20px;
-  box-sizing: border-box;
   align-items: center;
 }
 .item-img {

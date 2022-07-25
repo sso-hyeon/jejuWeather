@@ -7,13 +7,35 @@
     <title>Jeju Weather</title>
     <link rel="stylesheet" href="../common_file/lib/css/reset.css" />
     <link rel="stylesheet" href="../common_file/css/common.css" />
+    <link rel="stylesheet" href="../common_file/css/sub3.css" />
   </head>
   <body>
     <div id="wrapper">
       <header id="header"></header>
       <main id="main">
-        <section class="course-map">한라산 코스 지도</section>
-        <section class="course-info">코스별 입하산 정보</section>
+        <h2>한라산 입하산허용시간현황</h2>
+        <section id="course-map">
+          <img src="../common_file/images/trail-map.png" alt="" />
+          <ul class="course-name-wrap">
+            <li class="course-btn" data-name="어리목탐방로">어리목탐방로</li>
+            <li class="course-btn" data-name="영실탐방로">영실탐방로</li>
+            <li class="course-btn" data-name="성판악탐방로">성판악탐방로</li>
+            <li class="course-btn" data-name="관음사탐방로">관음사탐방로</li>
+            <li class="course-btn" data-name="돈내코코스">돈내코탐방로</li>
+          </ul>
+        </section>
+        <section id="course-info" class="d-none">
+          <h3></h3>
+          <div id="info-wrap">
+            <ul>
+              <li>동절기<br />(11월/12월/1월/2월)</li>
+              <li>춘추절기<br />(3월/4월/9월/10월)</li>
+              <li>하절기<br />(5월/6월/7월/8월)</li>
+              <li>입산 제한 기준점</li>
+            </ul>
+            <ul class="info-list"></ul>
+          </div>
+        </section>
       </main>
       <footer id="footer"></footer>
 
@@ -21,6 +43,8 @@
       <script src="../common_file/lib/js/ScrollMagic.js"></script>
       <script src="../common_file/lib/js/animation.gsap.js"></script>
       <script src="../common_file/js/common.js"></script>
+      <script src="../common_file/js/api.js"></script>
+      <script src="../common_file/js/sub3.js"></script>
     </div>
   </body>
 </html>
