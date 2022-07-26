@@ -93,7 +93,7 @@
 }
 
 .hour-weather #hour-title li:first-child {
-  height: 3.9em;
+  height: calc(2.6em + 40px);
 }
 
 #hour-weather-list {
@@ -114,6 +114,10 @@
 
 #hour-weather-list ul {
   margin: 0 10px;
+}
+
+#hour-weather-list ul li {
+  margin-right: 13px;
 }
 
 #hour-weather-list ul li:nth-child(2) {

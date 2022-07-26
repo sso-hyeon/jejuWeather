@@ -7,16 +7,19 @@
     <title>Jeju Weather</title>
     <link rel="stylesheet" href="../common_file/lib/css/reset.css" />
     <link rel="stylesheet" href="../common_file/css/common.css" />
-    <link rel="stylesheet" href="../common_file/css/main.css" />
+    <link rel="stylesheet" href="../common_file/css/sub2.css" />
   </head>
   <body>
     <div id="wrapper">
       <header id="header"></header>
       <main id="main">
         <h2>기온별 옷차림</h2>
-        <section>제주시 평균 온도</section>
-        <section>제주시 날씨 🌞</section>
-        <section>제주시 온도별 옷차림</section>
+        <section>
+          <h3>제주도 평균 기온</h3>
+          <p class="weather-temp"></p>
+          <img class="weather-icon"></img>
+        </section>
+        <section>오늘의 추천 옷차림</section>
       </main>
       <footer id="footer"></footer>
 
@@ -24,6 +27,8 @@
       <script src="../common_file/lib/js/ScrollMagic.js"></script>
       <script src="../common_file/lib/js/animation.gsap.js"></script>
       <script src="../common_file/js/common.js"></script>
+      <script src="../common_file/js/api.js"></script>
+      <script src="../common_file/js/sub2.js"></script>
     </div>
   </body>
 </html>
