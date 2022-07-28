@@ -77,7 +77,7 @@ function dayWeatherLoad(lat, lon) {
 function weatherLoad(lat, lon) {
   const WEATHER_API =
     WEATHER_BASE_URL +
-    "weather?lat=" +
+    "onecall?lat=" +
     lat +
     "&lon=" +
     lon +
@@ -87,6 +87,7 @@ function weatherLoad(lat, lon) {
   fetch(WEATHER_API)
     .then(response => response.json())
     .then(result => {
+      console.log(result);
       printWeather(result);
     });
 }
@@ -96,9 +97,13 @@ function printWeather(list) {
     .querySelector("#temp-icon")
     .setAttribute(
       "src",
-      "../common_file/images/weather/" + list.weather[0].icon + ".png"
+      "../common_file/images/weather/" + list.current.weather[0].icon + ".png"
     );
-  document.querySelector("#temp").innerText = Math.round(list.main.temp) + "℃";
-  document.querySelector("#min-temp").innerText = Math.round(list.main.temp_min) + "℃";
-  document.querySelector("#max-temp").innerText = Math.round(list.main.temp_max) + "℃";
+  document.querySelector("#temp").innerText = Math.round(list.current.temp) + "℃";
+  const sunriseTime = new Date(list.current.sunrise).getTime() + 1000 * 60 * 60 * 9;
+  const sunsetTime = new Date(list.current.sunset).getTime() + 1000 * 60 * 60 * 9;
+  document.querySelector("#min-temp").innerText = new Date(sunriseTime).getHours() + ":" + new Date(sunriseTime).getMinutes();
+  document.querySelector("#max-temp").innerText = new Date(sunsetTime).getHours() + ":" + new Date(sunsetTime).getMinutes();
+  document.querySelector("#wind-speed").innerText = list.current.wind_speed;
+  document.querySelector("#humidity").innerText = list.current.humidity
 }

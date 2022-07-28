@@ -31,8 +31,9 @@
             </ul>
           </div>
           <ul>
-            <li>습도 :</li>
-            <li>미세먼지</li>
+            <li>습도<br><span id="humidity"></span></li>
+            <li>풍속<br><span id="wind-speed"></span></li>
+            <li>강수량<br><span id="precipitation"></span></li>
           </ul>
         </section>
         <section class="safety-tips">
@@ -48,7 +49,22 @@
           </ul>
           <div id="hour-weather-list"></div>
         </section>
-        <section class="week-weather">주간 날씨 정보</section>
+        <section class="week-weather">
+          <h3>주간 예보</h3>
+          <ul class="week-weather-list">
+            <li><span>오전</span><span>오후</span></li>
+            <li>
+              <span class="week-date">오늘</span>
+              <span class="week-icon">
+                <img src="../common_file/images/weather/01n.png" alt="">
+                <img src="../common_file/images/weather/01d.png" alt="">
+              </span>
+              <span class="week-temp">
+                24/24
+              </span>
+            </li>
+          </ul>
+        </section>
       </main>
 
       <footer id="footer"></footer>
