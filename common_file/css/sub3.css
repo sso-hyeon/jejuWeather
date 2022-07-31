@@ -28,11 +28,11 @@
 
 .course-btn:nth-child(1) {
   top: 46%;
-  left: 21%;
+  left: 24%;
 }
 .course-btn:nth-child(2) {
   top: 72%;
-  left: 21%;
+  left: 22%;
 }
 .course-btn:nth-child(3) {
   top: 40%;
@@ -44,7 +44,7 @@
 }
 .course-btn:nth-child(5) {
   top: 85%;
-  left: 34%;
+  left: 36%;
 }
 
 #course-info {

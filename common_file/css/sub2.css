@@ -1,6 +1,4 @@
-#main section {
-  margin: 20px 0;
-}
+
 .weather-temp {
   font-size: 2em;
   font-weight: bold;
@@ -9,4 +7,26 @@
 .weather-icon {
   width: 33%;
   margin: 0 auto;
+}
+#clothes-list {
+  margin-top: 70px;
+}
+.swiper {
+  height: 150px;
+  margin-top: 20px;
+}
+.swiper-slide img {
+  width: 100%;
+}
+.swiper .swiper-pagination {
+  bottom: 0;
+  top: auto;
+}
+.swiper-pagination-progressbar {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: orange;
+  border-radius: 5px;
 }

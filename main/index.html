@@ -24,10 +24,10 @@
           <h3></h3>
           <div id="temp-wrap">
             <img id="temp-icon" />
-            <span id="temp">30</span>
+            <span id="temp"></span>
             <ul>
-              <li>최저기온 : <span id="min-temp"></span></li>
-              <li>최고기온 : <span id="max-temp"></span></li>
+              <li>일출 : <span id="min-temp"></span></li>
+              <li>일몰 : <span id="max-temp"></span></li>
             </ul>
           </div>
           <ul>
@@ -51,37 +51,26 @@
         </section>
         <section class="week-weather">
           <h3>주간 예보</h3>
-          <ul class="week-weather-list">
-            <li><span>오전</span><span>오후</span></li>
-            <li>
-              <span class="week-date">오늘</span>
-              <span class="week-icon">
-                <img src="../common_file/images/weather/01n.png" alt="">
-                <img src="../common_file/images/weather/01d.png" alt="">
-              </span>
-              <span class="week-temp">
-                24/24
-              </span>
-            </li>
-          </ul>
+          <table id="week-weather-list">
+          </table>
         </section>
       </main>
 
       <footer id="footer"></footer>
       <section class="popup-wrap d-none">
+        <button class="popup-close">X</button>
         <div class="popup">
-          <button class="popup-close">X</button>
           <ul>
-            <li class="popup-title">오늘은 맑음 입니다</li>
+            <li class="popup-title">오늘은 <span>맑음</span> 입니다</li>
             <li class="popup-icon">🌞</li>
-            <li class="popup-desc">내용 설명</li>
+            <li class="popup-desc">
+              <ul></ul>
+            </li>
             <li class="popup-go-btn">
-              기상청 국민행동요령 보거가기
               <a
-                href="https://www.weather.go.kr/w/weather/warning/safetyguide/heavy-rain.do"
-                target="_blank"
-                >GO</a
-              >
+              href="https://www.weather.go.kr/w/weather/warning/safetyguide/heavy-rain.do"
+              target="_blank"
+              >기상청 국민행동요령 보러가기 GO</a>
             </li>
           </ul>
         </div>
