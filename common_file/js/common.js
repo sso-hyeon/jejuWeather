@@ -69,7 +69,7 @@ function logoClick(logo) {
     if (location.href.split("/").indexOf("info") > 0) {
       location.href = "../../main/index.html";
     } else if (location.href.split("/").indexOf("main") < 0) {
-      location.href = "/main/index.html";
+      location.href = "../main/index.html";
     }
   });
 }
