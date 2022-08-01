@@ -1,17 +1,21 @@
-document.querySelector(".course-name-wrap").addEventListener("click", function (e) {
-  if (!e.target.classList.contains("course-btn")) return;
-  btnReset(".course-btn");
-  e.target.classList.add("on");
-  document.querySelector("#course-info h3").innerText = e.target.innerText;
-  document.querySelector("#course-info").classList.remove("d-none");
-  courseListLoad(e.target.dataset.name);
-});
+document
+  .querySelector(".course-name-wrap")
+  .addEventListener("click", function (e) {
+    if (!e.target.classList.contains("course-btn")) return;
+    btnReset(".course-btn");
+    e.target.classList.add("on");
+    document.querySelector("#course-info h3").innerText = e.target.innerText;
+    document.querySelector("#course-info").classList.remove("d-none");
+    courseListLoad(e.target.dataset.name);
+  });
 
 function courseListLoad(courseName) {
   fetch(MOUNTINE_API)
     .then(response => response.json())
     .then(result => {
-      const courseList = result.data.filter(list => list["탐방로명"] === courseName);
+      const courseList = result.data.filter(
+        list => list["탐방로명"] === courseName
+      );
       createCourseInfoList(courseList[0]);
     });
 }

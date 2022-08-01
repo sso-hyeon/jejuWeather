@@ -58,7 +58,9 @@ img {
   flex-grow: 4;
   flex-basis: 0;
 }
-.logo-btn, .menu-btn, .back-btn {
+.logo-btn,
+.menu-btn,
+.back-btn {
   cursor: pointer;
 }
 /* 메뉴창 */

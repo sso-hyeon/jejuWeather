@@ -101,7 +101,7 @@
 }
 
 .hour-weather li {
-  line-height: 1.3em;
+  line-height: 1.6em;
 }
 
 .hour-weather #hour-title {
@@ -109,7 +109,7 @@
 }
 
 .hour-weather #hour-title li:first-child {
-  height: calc(2.6em + 40px);
+  height: calc(3.2em + 40px);
 }
 
 #hour-weather-list {
@@ -147,7 +147,7 @@
 .week-weather h3 {
   text-align: left;
 }
-.week-weather #week-weather-list{
+.week-weather #week-weather-list {
   display: inline-block;
   padding: 25px;
   box-sizing: border-box;
@@ -164,10 +164,17 @@
   display: inline-block;
   vertical-align: middle;
   padding: 10px 0;
+  line-height: 1.5em;
 }
-#week-weather-list td:nth-child(1) {width: 20%;}
-#week-weather-list td:nth-child(2) {width: 60%;}
-#week-weather-list td:nth-child(3) {width: 20%;}
+#week-weather-list td:nth-child(1) {
+  width: 20%;
+}
+#week-weather-list td:nth-child(2) {
+  width: 60%;
+}
+#week-weather-list td:nth-child(3) {
+  width: 20%;
+}
 
 .week-icon img {
   width: 35px;

@@ -66,7 +66,11 @@ function createMenuWrap() {
 
 function logoClick(logo) {
   logo.addEventListener("click", function () {
-    location.href = "/main/index.html";
+    if (location.href.split("/").indexOf("info") > 0) {
+      location.href = "../../main/index.html";
+    } else if (location.href.split("/").indexOf("main") < 0) {
+      location.href = "/main/index.html";
+    }
   });
 }
 
