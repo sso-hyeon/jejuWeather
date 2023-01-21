@@ -64,10 +64,24 @@
 
 #info-wrap {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+#info-wrap > ul {
+  border-right: 1px solid #b0b0b0;
+  width: 35%;
+}
+#info-wrap li {
+  height: 3em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#info-wrap li {
-  line-height: 1.5em;
-  margin-bottom: 15px;
+#info-list-wrap {
+  flex-grow: 2;
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
 }
