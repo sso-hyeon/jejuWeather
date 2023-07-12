@@ -1,6 +1,15 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  font-family: "GmarketSansMedium", sans-serif;
 }
 
 body::-webkit-scrollbar {
